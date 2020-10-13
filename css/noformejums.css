@@ -1,0 +1,664 @@
+@import url('../css/fonts.css');
+
+:root{
+
+    /*      Krāsas        */
+    --white: #ffffff;
+    --midnight: #264653;
+    --gray: #3f4954;
+    --blue: #bdd5ea;
+
+
+    /*      fonti burtiem   */
+    --Anton: 'Anton', sans-serif;
+    --Josefin: 'Josefin', sans-serif;
+    --Lexend: 'Lexend', sans-serif;
+    --Livvic: 'Livvic', sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+
+/* ----------------------- navigacija ------------------------ */
+.nav{
+    background: var(--white);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-top: -1rem;
+}
+
+.sadalas{    
+    font-family: var(--Lexend);
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:850px) {
+  .sadalas{
+    display: grid;
+  }
+}
+
+.sadalas a{
+    color: var(--midnight);
+    text-decoration: none;
+    list-style: none;
+    padding: 30px 15px 30px 15px;
+    margin: -4px;
+}
+
+.sadalas a:hover{
+    color: var(--white);
+    background-color: var(--midnight);   
+}
+
+.sadalas .active {
+  background-color: var(--midnight);
+  color: var(--white);   
+}
+
+@media screen and (max-width:850px) {
+  .sadalas .active{
+    display: grid;   
+  } 
+}
+
+.soctikli{
+    color: var(--midnight);
+    padding: 6px; 
+    padding-right: 0; 
+    font-size: 20px;
+}
+
+@media screen and (max-width:650px) {
+  .soctikli{
+    display: grid; 
+    text-decoration: none; 
+  } 
+}
+
+.soctikli:hover{
+    color: var(--blue);
+}
+
+.logo{
+  padding-top: 10px;
+}
+
+/* ----------------------- Par Allure ------------------------ */
+
+.ievads{
+    text-align: center;
+    padding-top: 360px;
+    background-image: url(../img/zils.jpg);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    font-family: var(--Lexend);
+    font-size: 20px;
+    color: var(--midnight);
+}
+
+.sakuma_poga{
+    font-size: 20px;    
+    padding: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+    background: var(--midnight);
+    color: var(--white);
+    border-radius: 36px;
+    font-family: var(--Josefin);
+}
+
+.sakuma_poga:hover{
+    background: transparent;
+    border: 1px solid var(--midnight);
+    color: var(--midnight);
+}
+
+.teksts_parAllure{
+    padding: 3% 7% 3% 7%;
+    text-align: center;
+    font-family: var(--Lexend);
+    color: var(--midnight);
+}
+
+.atsauksmes{
+    color: var(--midnight);
+    text-decoration: none;
+}
+
+.atsauksmes:hover{
+    color: var(--blue);
+}
+
+/* ------------------------------ karuselis bildes ------------------------ */
+
+.karuselis {
+    padding: 40px;
+    padding-bottom: 15%;
+    position: relative;
+    display: flex;
+    width: 50%;
+    margin: auto;
+  }
+
+  .karuselis-slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;    
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
+  }
+
+/* ---------------------------- pasutijumi ----------------------- */
+
+.pukes{
+  background-image: url("../img/pukes.jpg");
+  color: transparent;  
+  font-size: 2em;
+  font-family: var(--Lexend);
+  padding-top: 50px;
+  padding-bottom: 40px;
+  margin: -1rem;
+}
+
+.iel_gk{
+  color: var(--midnight);  
+  font-size: 1.5em;
+  font-family: var(--Lexend);
+  padding: 20px;
+  background-color: var(--white);
+}
+
+.kaste{
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px var(--midnight);
+  display: flex;
+  margin: 110px;
+  background-color: white;
+}
+
+@media screen and (max-width:1230px) {
+  .kaste{
+    display: grid;  
+    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+    padding: 30px;
+    margin: 30px;
+  } 
+}
+
+.kaste:hover{  
+  box-shadow: 0 5px 15px var(--blue); 
+}
+
+.kaste2{
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px var(--midnight);
+  display: flex;
+  margin: 110px;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: white;
+}
+
+@media screen and (max-width:1230px) {
+  .kaste2{
+    display: grid;  
+    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+    padding: 30px;
+    margin: 30px;
+  } 
+}
+
+.kaste2:hover{  
+  box-shadow: 0 5px 15px var(--blue); 
+}
+
+.kastes_bilde{
+  width: 200px;
+  height: auto; 
+  padding: 20px;
+}
+
+@media screen and (max-width:1230px) {
+  .kastes_bilde{
+    display:block;
+    margin:0 auto;
+  } 
+}
+
+.teksts_parAllure2{  
+  text-align: center;
+  font-family: var(--Lexend);
+  color: var(--midnight);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media screen and (max-width:1230px) {
+  .teksts_parAllure2{
+    display: grid;  
+    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+    padding: 0;
+  } 
+}
+
+/* ------------------------ kalkulators -------------------- */
+
+.calborder {
+  margin: auto;
+  background:transparent;
+  width:290px;
+  border-radius: 5px;
+  border-color: #104f55;
+}
+
+.display input{
+  width: 88%;
+  margin: 7px;
+  padding-left: 17px;
+  height: 30px;
+  text-align:right;
+  font-size:25px;
+  font-family:var(--Josefin);
+  color: var(--midnight);
+}
+
+ul {
+  padding-left: 8px;
+  list-style-type: none;
+  overflow: auto;
+
+}
+li {
+  float: left;
+}
+
+.calbtn {
+  margin-top: 5px;
+  padding-left: 5%;
+}
+
+.calbtn button{
+  width:61px;
+  background-color: var(--midnight);
+  border-color: white;
+  height: 45px;
+  font-size: 25px;
+  color:white;
+}
+
+.parAllure3{
+  color: var(--midnight);
+  text-align: center;
+  padding-top: 6px;
+  padding-left: 16px;
+  font-family: var(--Lexend);
+  font-size: 2em;
+}
+
+/* ------------------------ galerija -------------------- */
+
+/* Galerijas konteineris - kaste */
+
+#index-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas:     
+  "img1 img2 img3 img4"
+  "img5 img6 img7 img8"
+  "img9 img10 img11 img12";
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+#index-gallery .gallery-img {
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* Pašas bildes */
+
+#index-gallery .img-1 {
+  grid-area: img1;
+  background-image: url("../img/otras/img1.jpg");
+}
+
+#index-gallery .img-2 {
+  grid-area: img2;
+  background-image: url("../img/otras/img2.jpg");
+}
+
+#index-gallery .img-3 {
+  grid-area: img3;
+  background-image: url("../img/otras/img3.jpg");
+}
+
+#index-gallery .img-4 {
+  grid-area: img4;
+  background-image: url("../img/otras/img4.jpg");
+}
+
+#index-gallery .img-5 {
+  grid-area: img5;
+  background-image: url("../img/otras/img5.jpg");
+}
+
+#index-gallery .img-6 {
+  grid-area: img6;
+  background-image: url("../img/otras/img6.jpg");
+}
+
+#index-gallery .img-7 {
+  grid-area: img7;
+  background-image: url("../img/otras/img7.jpg");
+}
+
+#index-gallery .img-8 {
+  grid-area: img8;
+  background-image: url("../img/otras/img8.jpg");
+}
+
+#index-gallery .img-9 {
+  grid-area: img9;
+  background-image: url("../img/otras/img9.jpg");
+}
+
+#index-gallery .img-10 {
+  grid-area: img10;
+  background-image: url("../img/otras/img10.jpg");
+}
+
+#index-gallery .img-11 {
+  grid-area: img11;
+  background-image: url("../img/otras/img11.jpg");
+}
+
+#index-gallery .img-12 {
+  grid-area: img12;
+  background-image: url("../img/otras/img12.jpg");
+}
+
+/* bilžu teksti */
+
+.gallery-img div {
+  width: 100%;
+  height: 100%;
+  background-color: var(--midnight);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-img a {
+  font-family: var(--Lexend);
+  font-size: 18px;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.gallery-img div:hover {
+  opacity: 0.7;
+  transition: all ease-in-out 100ms;
+}
+
+/* uzspiežot uz bildes */
+
+.img-window {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.img-window img {
+  max-height: 80vh;
+  max-width: 80vw;
+}
+
+/* nākamā */
+
+.img-btn-Nākamā {
+  display: block;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background-color: var(--gray);
+  position: fixed;
+  top: 48vh;
+  z-index: 500;
+  font-family: var(--Lexend);
+  font-size: 15px;
+  color: var(--white);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width:760px) {
+  .img-btn-Nākamā {    
+    display: none;
+  } 
+}
+
+.img-btn-Nākamā:hover {
+  opacity: 0.7;
+}
+
+.img-btn-Iepriekšējā {
+  display: block;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background-color: var(--gray);
+  position: fixed;
+  top: 48vh;
+  z-index: 500;
+  font-family: var(--Lexend);
+  font-size: 15px;
+  color: var(--white);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width:760px) {
+  .img-btn-Iepriekšējā {    
+    display: none;
+  } 
+}
+
+.img-btn-Iepriekšējā:hover {
+  opacity: 0.7;
+}
+
+/* -------------------------- atsauksmes un epaskaste ----------------------- */
+
+.btn2:hover{
+  background: transparent;
+  border: 1px solid var(--midnight);
+  color: var(--midnight);
+}
+
+.btn2{
+  font-size: 1.5em;
+  margin: 2rem;
+  background: var(--midnight);
+  color: var(--white);
+  border-radius: 16px;
+  font-family: var(--Josefin);
+  width: 96.5%;
+  height: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width:760px) {
+  .btn2 {    
+    width: 200px;
+  } 
+}
+
+.paldies{
+  font-size: 1.5em;
+  text-align: center;    
+  color: var(--midnight);
+font-family: var(--Lexend);
+}
+
+.komentari{
+  font-size: 1em;
+  text-align: justify;    
+  color: var(--midnight);
+  font-family: var(--Lexend);
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2%;
+}
+
+@media screen and (max-width:760px) {
+  .komentari {    
+    display: grid;  
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  } 
+}
+
+/* ------ */
+
+.kontakti_h1 {
+  text-align: center;
+  font-family: var(--Lexend);
+  font-size: 2rem;
+  color: var(--midnight);
+}
+
+.kontakti_h2 {
+  text-align: center;
+  font-family: var(--Lexend);
+  font-size: 1.5rem;
+  color: var(--midnight);
+}
+
+.contact-form{
+  text-align: center;
+  font-family: var(--Lexend);
+  font-size: 1.5rem;
+  color: var(--midnight);
+}
+
+form{
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+
+.form-control{
+  width: 600px;
+  background: transparent;
+  border: none;
+  border-bottom: 0.5px solid  var(--midnight);
+  color: var(--midnight);
+  font-family: sans-serif;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+input{
+  height: 45px;
+}
+
+form .submit{
+  background: var(--midnight);
+  border-color: var(--midnight);
+  color: var(--white);
+  font-size: 20px;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding-top: 5px;
+  align-items: center;
+  font-family: var(--Josefin);
+}
+
+@media screen and (max-width:760px) {
+  form .submit {    
+    width: 200px;
+  } 
+}
+
+form .submit:hover{
+  background-color: var(--white);
+  color: var(--midnight);
+  cursor: pointer;
+  border-radius: 10px;
+  border-color: none;
+}
+
+/* ----------------------- kajene ------------------------ */
+
+.kajene{
+    background: var(--midnight);
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: -1rem;
+}
+
+.kajene_bloks{ 
+    height: 100%;   
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 16% 25px 16%;    
+    font-family: var(--Lexend); 
+}
+
+@media screen and (max-width:750px) {
+  .kajene_bloks{
+    display: grid;  
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  } 
+}
+
+.ikonas_kajene{
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.ikonas_kajene:hover{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.tekts_kajene{
+    font-family: var(--Livvic);
+}
+
