@@ -1,2 +1,2 @@
-# Website-samples3-Allure-
+# Website-samples3
 Trials one of my first websites
